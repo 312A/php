@@ -27,6 +27,7 @@
             <td>".$tabledata['name']."</td>
             <td>".$tabledata['class']."</td>
             <td><a href='update.php?rn=$tabledata[rollno] & sn=$tabledata[name] & cl=$tabledata[class]'>Edit</a></td>
+            <td><a href='delete.php?rn=$tabledata[rollno].' onclick='return deletedata();'>Delete</a></td>
         </tr>
            ";
             // echo $tabledata['rollno']." ".$tabledata['name']." ".$tabledata['class'];
@@ -36,3 +37,8 @@
     }
 ?>
 </table>
+<script type="text/javascript">
+    function deletedata(){
+      return   confirm('Are you sure?');
+    }
+</script>
