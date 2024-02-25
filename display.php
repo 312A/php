@@ -1,3 +1,8 @@
+<style type="text/css">
+    td{
+        padding:10px;
+    }
+</style>
 <?php
     include('connection.php');
     // error_reporting(0);
@@ -11,6 +16,7 @@
         <th>Roll No</th>
         <th>Student Name</th>
         <th>Class</th>
+        <th>Operations</th>
     </tr>
 <?php
    
@@ -20,7 +26,8 @@
             <td>".$tabledata['rollno']."</td>
             <td>".$tabledata['name']."</td>
             <td>".$tabledata['class']."</td>
-           </tr>
+            <td><a href='update.php?rn=$tabledata[rollno] & sn=$tabledata[name] & cl=$tabledata[class]'>Edit</a></td>
+        </tr>
            ";
             // echo $tabledata['rollno']." ".$tabledata['name']." ".$tabledata['class'];
         }

@@ -32,3 +32,7 @@
     }else{
         echo "Record not found";
     }         -->
+
+    <!-- // echo  $_GET['rn'];
+    // echo  $_GET['sn'];
+    // echo  $_GET['cl']; -->
